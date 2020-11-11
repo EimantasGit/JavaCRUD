@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.expenseController">
+    <children>
+        <TableView fx:id="expenseTable" layoutX="45.0" layoutY="14.0" prefHeight="200.0" prefWidth="299.0">
+            <columns>
+                <TableColumn fx:id="idC" prefWidth="75.0" text="Išlaidų ID" />
+                <TableColumn fx:id="amountC" onEditCommit="#editAmount" prefWidth="75.0" text="Išlaidų kiekis" />
+            </columns>
+        </TableView>
+        <TextField fx:id="amountField" layoutX="45.0" layoutY="240.0" />
+        <Button layoutX="246.0" layoutY="240.0" mnemonicParsing="false" onAction="#addExpense" text="Pridėti išlaidas" />
+        <Button layoutX="246.0" layoutY="274.0" mnemonicParsing="false" onAction="#deleteExpense" text="Trinti išlaidas" />
+    </children>
+</AnchorPane>

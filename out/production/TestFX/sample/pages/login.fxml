@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="299.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.loginController">
+   <children>
+      <Button layoutX="300.0" layoutY="179.0" mnemonicParsing="false" onAction="#login" text="Prisijungti" />
+      <PasswordField fx:id="pass" layoutX="151.0" layoutY="137.0" promptText="Slaptažodis" />
+      <TextField fx:id="user" layoutX="151.0" layoutY="91.0" promptText="Prisijungimo vardas" />
+      <ChoiceBox fx:id="paskyros" layoutX="150.0" layoutY="43.0" onAction="#getSelected" prefWidth="150.0" />
+      <Label layoutX="150.0" layoutY="25.0" prefHeight="17.0" prefWidth="150.0" text="Paskyros tipas" />
+   </children>
+</AnchorPane>

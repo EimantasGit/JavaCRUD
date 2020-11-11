@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.categoryController">
+   <children>
+      <TableView fx:id="categoryTable" layoutX="30.0" layoutY="14.0" prefHeight="200.0" prefWidth="391.0">
+        <columns>
+          <TableColumn fx:id="idC" prefWidth="56.66668891906738" text="ID" />
+            <TableColumn fx:id="parentC" minWidth="0.0" prefWidth="98.6666488647461" text="Tėvo ID" />
+          <TableColumn fx:id="nameC" onEditCommit="#editName" prefWidth="310.6667022705078" text="Pavadinimas" />
+        </columns>
+      </TableView>
+      <Button layoutX="246.0" layoutY="226.0" mnemonicParsing="false" onAction="#buttonClicked" text="Sukurti įrašą" />
+      <Button layoutX="343.0" layoutY="226.0" mnemonicParsing="false" onAction="#deleteCategory" text="Ištrinti įrašą" />
+      <TextField fx:id="nameField" layoutX="30.0" layoutY="226.0" promptText="Kategorijos pavadinimas" />
+      <Button fx:id="subcat" layoutX="435.0" layoutY="226.0" mnemonicParsing="false" onAction="#subcategories" text="Subkategorijos" />
+      <Button fx:id="incB" layoutX="246.0" layoutY="267.0" mnemonicParsing="false" onAction="#showIncome" text="Pajamos" />
+      <Button fx:id="expB" layoutX="327.0" layoutY="267.0" mnemonicParsing="false" onAction="#showExpense" text="Išlaidos" />
+   </children>
+</AnchorPane>

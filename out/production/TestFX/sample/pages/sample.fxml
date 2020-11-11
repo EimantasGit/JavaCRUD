@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Importavimas">
+            <items>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Eksportavimas">
+            <items>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="396.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="companyButton" layoutX="249.0" layoutY="14.0" mnemonicParsing="false" onAction="#companyCreator" text="Įmonių paskyros" />
+            <Button fx:id="personButton" layoutX="246.0" layoutY="56.0" mnemonicParsing="false" onAction="#personCreator" text="Asmenų paskyros" />
+            <Button layoutX="262.0" layoutY="97.0" mnemonicParsing="false" onAction="#categoryCreator" text="Kategorijos" />
+            <Label layoutX="14.0" layoutY="266.0" text="Paskyros ID" />
+            <Label layoutX="14.0" layoutY="293.0" text="Paskyros vardas" />
+            <Label layoutX="14.0" layoutY="322.0" text="Paskyros tipas" />
+            <TextField fx:id="loggedID" editable="false" layoutX="113.0" layoutY="262.0" prefHeight="25.0" prefWidth="52.0" />
+            <TextField fx:id="loggedName" editable="false" layoutX="113.0" layoutY="289.0" />
+            <TextField fx:id="loggedType" editable="false" layoutX="113.0" layoutY="318.0" />
+            <Label layoutX="14.0" layoutY="232.0" prefHeight="17.0" prefWidth="149.0" text="Paskyros duomenys" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
